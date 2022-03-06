@@ -6,7 +6,7 @@ Created on 22/5/2015
 import turtle                                   #Import Turtle
 
 def principal():                                #Define la funcion
-    prof = input("Digite la profundidad: ")     #Define la profundidad
+    prof = int(input("Digite la profundidad: "))     #Define la profundidad
     dragon = turtle.Turtle()                    #Define el lapiz
     dragon.hideturtle()                         #Esconde el lapiz, la figura de la flecha
     if prof >= 6:                               #Condicion para calcular la rapidez en base de la profundidad

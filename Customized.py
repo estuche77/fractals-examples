@@ -6,9 +6,9 @@ Created on 17/5/2015
 import turtle                                       #Importa Turtle
 
 def principal():                                    #Define funcion principal
-    prof = abs(input("Digit la profundidad: "))     #Entrada de profundidad
+    prof = int(input("Digit la profundidad: "))     #Entrada de profundidad
     hexagon = turtle.Pen()                          #Define el lapiz
-    hexagon.tracer(800, 1)                          #Setea la velocidad
+    turtle.tracer(800, 1)                          #Setea la velocidad
     
     def dibujo(tam, prof):                          #Define la funcion recursiva
         if tam == prof:                             #Caso base

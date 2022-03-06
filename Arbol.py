@@ -3,17 +3,16 @@ Created on 7/5/2015
 
 @author: Estuche
 '''
-from __future__ import division                                     #Importa la division
 import turtle                                                       #Importa Turtle
 
 def principal():                                                    #Se declara la funcion principal
-    veces = abs(input("Digite las veces: "))                        #Profunidad
-    angulo = abs(input("Digite un angulo: "))                       #Angulo
+    veces = int(input("Digite las veces: "))                        #Profunidad
+    angulo = int(input("Digite un angulo: "))                       #Angulo
     wn = turtle.Screen()                                            #Define la pantalla
     wn.bgcolor("white")                                             #Define el background
     tree = turtle.Turtle()                                          #Define el pincel
     tree.left(90)                                                   #Setea la torguga
-    tree.tracer(800, 1)                                             #Setea la velocidad
+    turtle.tracer(800, 1)                                             #Setea la velocidad
     tree.penup()                                                    #Levanta el pincel
     tree.sety(-200)                                                 #Setea la torguga
     tree.pendown()                                                  #Baja el pincel

@@ -3,12 +3,11 @@ Created on 8/5/2015
 
 @author: Estuche
 '''
-from __future__ import division                                                     #Importa division
 import turtle                                                                       #Importa Turtle
 
 def principal():                                                                    #Se declara la funcion principal
     tam = 300                                                                       #Setea el tamano de cada lado del primer cuadro
-    prof = abs(input("Digite la profundidad: "))                                    #Se digita la prfundidad de la recursion
+    prof = int(input("Digite la profundidad: "))                                    #Se digita la prfundidad de la recursion
     x = -150                                                                        #Se setea el eje x base
     y = -150                                                                        #Se setea el eje y base
     wn = turtle.Screen()                                                            #Se llama a la ventana
@@ -16,7 +15,7 @@ def principal():                                                                
     wn.bgcolor("white")                                                             #Colo de fondo
     cuadrado = turtle.Turtle()                                                      #Se declara cuadrado
     cuadrado.hideturtle()                                                           #Oculta la tortuga
-    cuadrado.tracer(800, 1)                                                         #Se setea la velocidad
+    turtle.tracer(800, 1)                                                         #Se setea la velocidad
     
     def recur(x, y, tam, prof):                                                     #Recursividad
         if prof <= 0:                                                               #Limite

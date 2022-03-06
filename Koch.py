@@ -3,13 +3,12 @@ Created on 9/5/2015
 
 @author: Estuche
 '''
-from __future__ import division                     #Importa la division
 import turtle                                       #Imoprta Turtle
 
 def principal():                                    #Define funcion principal
-    prof = input("Digite la profundidad: ")         #Define la profundidad
+    prof = int(input("Digite la profundidad: "))         #Define la profundidad
     lapiz = turtle.Turtle()                         #Define lapiz
-    lapiz.tracer(800, 1)                            #Define
+    turtle.tracer(800, 1)                            #Define
     lapiz.penup()                                   #Levanta el lapiz
     lapiz.setx(-250)                                #Setea la posicion
     lapiz.sety(-175)                                #Setea la posicion
