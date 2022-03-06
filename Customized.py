@@ -3,19 +3,20 @@ Created on 17/5/2015
 
 @author: Estuche
 '''
-import turtle                                       #Importa Turtle
+import turtle
 
-def principal():                                    #Define funcion principal
-    prof = int(input("Digit la profundidad: "))     #Entrada de profundidad
-    hexagon = turtle.Pen()                          #Define el lapiz
-    turtle.tracer(800, 1)                          #Setea la velocidad
-    
-    def dibujo(tam, prof):                          #Define la funcion recursiva
-        if tam == prof:                             #Caso base
-            return                                  #Retorno
-        else:                                       #Sino
-            hexagon.forward(tam)                    #Las siguientes lineas definen la funcion
-            hexagon.left(30)                        #y los parametros del hexagono
+
+def principal():
+    prof = int(input("Digit la profundidad: "))
+    hexagon = turtle.Pen()
+    turtle.tracer(800, 1)
+
+    def dibujo(tam, prof):
+        if tam == prof:
+            return
+        else:
+            hexagon.forward(tam)
+            hexagon.left(30)
             hexagon.forward(tam)
             hexagon.left(30)
             hexagon.forward(tam)
@@ -26,7 +27,7 @@ def principal():                                    #Define funcion principal
             hexagon.left(30)
             hexagon.forward(tam)
             hexagon.left(29)
-            dibujo(tam + 1, prof)                   #Llamada recursiva de profundiad
-    
-    dibujo(1, prof)                                 #Se llama funcion
-    turtle.done()                                   #Espera a cerrar la ventana
+            dibujo(tam + 1, prof)
+
+    dibujo(1, prof)
+    turtle.done()
