@@ -26,7 +26,7 @@ def principal():
     hexagon.hideturtle()
 
     def dibujo(tam, prof):
-        if tam == prof:
+        if tam == prof + 1:
             return
 
         hexagon.forward(tam)
@@ -40,10 +40,11 @@ def principal():
         hexagon.forward(tam)
         hexagon.left(30)
         hexagon.forward(tam)
-        hexagon.left(29)
+        hexagon.left(29) # This is the magic
         dibujo(tam + 1, prof)
 
     dibujo(1, prof)
+    turtle.update()
     turtle.done()
 
 

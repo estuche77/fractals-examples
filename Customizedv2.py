@@ -80,6 +80,7 @@ def principal():
 
     dibcuad(x, y, tam, prof)
     recur(x, y, tam, prof - 1)
+    turtle.update()
     turtle.done()
 
 

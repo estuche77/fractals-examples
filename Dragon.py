@@ -50,6 +50,7 @@ def principal():
             dibujo(False, prof - 1, tam)
 
     main(prof, 2)
+    turtle.update()
     turtle.done()
 
 

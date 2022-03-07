@@ -50,7 +50,8 @@ def principal():
         lapiz.right(60)
         curva(prof-1, tam/3)
 
-    koch(prof, 500)
+    koch(prof-1, 500)
+    turtle.update()
     turtle.done()
 
 

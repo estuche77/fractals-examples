@@ -50,6 +50,7 @@ def principal():
         tree.back(tam)
 
     arbol(120, veces, angulo, 5)
+    turtle.update()
     turtle.done()
 
 
