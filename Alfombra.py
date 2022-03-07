@@ -8,10 +8,6 @@ import Validator
 
 
 def principal():
-    tam = 300
-    x = -150
-    y = -150
-
     string_input = input("Digite la profundidad: ")
 
     success, prof = Validator.TryConvertPositiveInteger(string_input)
@@ -19,6 +15,10 @@ def principal():
     if not success:
         print("Profundidad debe ser un entero positivo")
         return
+
+    tam = 300
+    x = -150
+    y = -150
 
     # So that we can spawn several windows from the menu
     turtle.TurtleScreen._RUNNING = True
