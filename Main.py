@@ -12,55 +12,51 @@ import Arbol
 
 
 def menu():
-    print("Seleccione el fractal a visualizar:")
-    print("1. Copo de Koch")
-    print("2. Arbol")
-    print("3. Alfombra de Sierpinski")
-    print("4. Curva de dragon")
-    print("5. Personalizado")
-    bandera = 1
-    n = input("> ")
-    try:
-        n = int(n)
-    except ValueError:
-        bandera = 0
-    if n == 1:
-        Koch.principal()
-    elif n == 2:
-        Arbol.principal()
-    elif n == 3:
-        Alfombra.principal()
-    elif n == 4:
-        Dragon.principal()
-    elif n == 5:
-        print("1. Version 1")
-        print("2. Version 2")
-        while bandera != 0:
-            n = input("> ")
-            try:
-                n = int(n)
-            except ValueError:
-                bandera = 0
-            if n == 1:
-                Customized.principal()
-                bandera = 0
-            elif n == 2:
-                Customizedv2.principal()
-                bandera = 0
-            else:
-                print("Digite un numero/letra valido")
-    else:
-        print("Digite un numero/letra valida")
-    print("Desea visualizar otro fractal S/N: ")
-    n = input("> ")
-    if n == "S" or n == "s":
-        print("\n" * 17)
-        return menu()
-    elif n == "N" or n == "n":
-        return
-    else:
-        print("Letra no reconocida")
-        print("La aplicacion se cerrara")
+    option = "S"
+
+    while (option == "S" or option == "s"):
+        print("Seleccione el fractal a visualizar:")
+        print("1. Copo de Koch")
+        print("2. Arbol")
+        print("3. Alfombra de Sierpinski")
+        print("4. Curva de dragon")
+        print("5. Personalizado")
+
+        option = input("> ")
+
+        if option == "1":
+            Koch.principal()
+        elif option == "2":
+            Arbol.principal()
+        elif option == "3":
+            Alfombra.principal()
+        elif option == "4":
+            Dragon.principal()
+        elif option == "5":
+            print("1. Version 1")
+            print("2. Version 2")
+            while option != "1" or option != "2":
+                option = input("> ")
+                if option == "1":
+                    Customized.principal()
+                elif option == "2":
+                    Customizedv2.principal()
+                else:
+                    print("Digite una opcion valida")
+        else:
+            print("Digite una opcion valida")
+        
+        print("Desea visualizar otro fractal S/N: ")
+        option = input("> ")
+
+        if option == "S" or option == "s":
+            print("\n" * 17)
+        elif option == "N" or option == "n":
+            break
+        else:
+            print("Letra no reconocida")
+        
+    print("La aplicacion se cerrara...")
 
 
 menu()
