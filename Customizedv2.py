@@ -1,7 +1,7 @@
 '''
 Created on May 24, 2015
 
-@author: estuche
+@author: estuche77
 '''
 import math
 import turtle
@@ -15,6 +15,7 @@ def principal():
     wn = turtle.Screen()
     wn.setup(1000, 1000)
     wn.bgcolor("white")
+    turtle.TurtleScreen._RUNNING=True
     hexagon = turtle.Turtle()
     hexagon.hideturtle()
     turtle.tracer(800, 1)

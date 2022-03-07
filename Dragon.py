@@ -1,13 +1,14 @@
 '''
 Created on 22/5/2015
 
-@author: Estuche
+@author: estuche77
 '''
 import turtle
 
 
 def principal():
     prof = int(input("Digite la profundidad: "))
+    turtle.TurtleScreen._RUNNING=True
     dragon = turtle.Turtle()
     dragon.hideturtle()
     if prof >= 6:

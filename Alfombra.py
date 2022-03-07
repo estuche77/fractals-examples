@@ -1,7 +1,7 @@
 '''
 Created on 8/5/2015
 
-@author: Estuche
+@author: estuche77
 '''
 import turtle
 
@@ -12,6 +12,7 @@ def principal():
     x = -150
     y = -150
     wn = turtle.Screen()
+    turtle.TurtleScreen._RUNNING=True
     wn.setup(1000, 1000)
     wn.bgcolor("white")
     cuadrado = turtle.Turtle()

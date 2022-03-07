@@ -1,7 +1,7 @@
 '''
 Created on 7/5/2015
 
-@author: Estuche
+@author: estuche77
 '''
 import turtle
 
@@ -10,6 +10,7 @@ def principal():
     veces = int(input("Digite las veces: "))
     angulo = int(input("Digite un angulo: "))
     wn = turtle.Screen()
+    turtle.TurtleScreen._RUNNING=True
     wn.bgcolor("white")
     tree = turtle.Turtle()
     tree.left(90)

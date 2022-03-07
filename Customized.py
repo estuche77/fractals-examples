@@ -1,7 +1,7 @@
 '''
 Created on 17/5/2015
 
-@author: Estuche
+@author: estuche77
 '''
 import turtle
 
@@ -9,6 +9,7 @@ import turtle
 def principal():
     prof = int(input("Digit la profundidad: "))
     hexagon = turtle.Pen()
+    turtle.TurtleScreen._RUNNING=True
     turtle.tracer(800, 1)
 
     def dibujo(tam, prof):

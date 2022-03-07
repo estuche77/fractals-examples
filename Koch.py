@@ -1,7 +1,7 @@
 '''
 Created on 9/5/2015
 
-@author: Estuche
+@author: estuche77
 '''
 import turtle
 
@@ -9,6 +9,7 @@ import turtle
 def principal():
     prof = int(input("Digite la profundidad: "))
     lapiz = turtle.Turtle()
+    turtle.TurtleScreen._RUNNING=True
     turtle.tracer(800, 1)
     lapiz.penup()
     lapiz.setx(-250)

@@ -1,7 +1,7 @@
 '''
 Created on May 24, 2015
 
-@author: estuche
+@author: estuche77
 '''
 import Koch
 import Dragon
