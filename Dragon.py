@@ -8,7 +8,7 @@ import Validator
 
 
 def principal():
-    string_input = input("Digite la profundidad: ")
+    string_input = input("Digite la profundidad (16 recomendado): ")
 
     success, prof = Validator.TryConvertPositiveInteger(string_input)
     

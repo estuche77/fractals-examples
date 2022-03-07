@@ -8,14 +8,14 @@ import Validator
 
 
 def principal():
-    string_veces = input("Digite las veces: ")
+    string_veces = input("Digite las veces (10 recomendado): ")
     success, veces = Validator.TryConvertPositiveInteger(string_veces)
 
     if not success:
         print("Veces debe ser un entero positivo")
         return
     
-    string_angulo = input("Digite un angulo: ")
+    string_angulo = input("Digite un angulo (30-90 recomendado): ")
     success, angulo = Validator.TryConvertPositiveInteger(string_angulo)
     
     if not success:
