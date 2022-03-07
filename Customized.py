@@ -32,3 +32,6 @@ def principal():
 
     dibujo(1, prof)
     turtle.done()
+
+if __name__ == "__main__":
+    principal()

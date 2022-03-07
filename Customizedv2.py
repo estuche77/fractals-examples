@@ -72,3 +72,6 @@ def principal():
         recur(x, y, tam, prof - 1)
 
     turtle.done()
+
+if __name__ == "__main__":
+    principal()

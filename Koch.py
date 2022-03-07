@@ -39,3 +39,6 @@ def principal():
 
     koch(prof, largo)
     turtle.done()
+
+if __name__ == "__main__":
+    principal()

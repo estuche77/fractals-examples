@@ -34,3 +34,6 @@ def principal():
 
     arbol(120, veces, angulo, 5)
     turtle.done()
+
+if __name__ == "__main__":
+    principal()

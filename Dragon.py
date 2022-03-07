@@ -44,3 +44,6 @@ def principal():
 
     main(prof, 2)
     turtle.done()
+
+if __name__ == "__main__":
+    principal()
