@@ -3,24 +3,27 @@ Created on May 24, 2015
 
 @author: estuche77
 '''
-import Koch
-import Dragon
 import Alfombra
+import Arbol
+import Dragon
 import Customized
 import Customizedv2
-import Arbol
+import Koch
 
 
 def menu():
-    option = "S"
+    option = "0"
 
-    while (option == "S" or option == "s"):
+    while (option != "7"):
+        print("\n" * 17)
         print("Seleccione el fractal a visualizar:")
         print("1. Copo de Koch")
         print("2. Arbol")
         print("3. Alfombra de Sierpinski")
         print("4. Curva de dragon")
-        print("5. Personalizado")
+        print("5. Personalizado v1")
+        print("6. Personalizado v2")
+        print("7. Salir")
 
         option = input("> ")
 
@@ -33,28 +36,13 @@ def menu():
         elif option == "4":
             Dragon.principal()
         elif option == "5":
-            print("1. Version 1")
-            print("2. Version 2")
-            while option != "1" or option != "2":
-                option = input("> ")
-                if option == "1":
-                    Customized.principal()
-                elif option == "2":
-                    Customizedv2.principal()
-                else:
-                    print("Digite una opcion valida")
+            Customized.principal()
+        elif option == "6":
+            Customizedv2.principal()
+        elif option == "7":
+            pass
         else:
             print("Digite una opcion valida")
-        
-        print("Desea visualizar otro fractal S/N: ")
-        option = input("> ")
-
-        if option == "S" or option == "s":
-            print("\n" * 17)
-        elif option == "N" or option == "n":
-            break
-        else:
-            print("Letra no reconocida")
         
     print("La aplicacion se cerrara...")
 
