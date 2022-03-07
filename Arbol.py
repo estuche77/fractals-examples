@@ -4,11 +4,23 @@ Created on 7/5/2015
 @author: estuche77
 '''
 import turtle
+import Validator
 
 
 def principal():
-    veces = int(input("Digite las veces: "))
-    angulo = int(input("Digite un angulo: "))
+    string_veces = input("Digite las veces: ")
+    success, veces = Validator.TryConvertPositiveInteger(string_veces)
+
+    if not success:
+        print("Veces debe ser un entero positivo")
+        return
+    
+    string_angulo = input("Digite un angulo: ")
+    success, angulo = Validator.TryConvertPositiveInteger(string_angulo)
+    
+    if not success:
+        print("Angulo debe ser un entero positivo")
+        return
 
     # So that we can spawn several windows from the menu
     turtle.TurtleScreen._RUNNING = True

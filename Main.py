@@ -15,7 +15,7 @@ def menu():
     option = "0"
 
     while (option != "7"):
-        print("\n" * 17)
+        print()
         print("Seleccione el fractal a visualizar:")
         print("1. Copo de Koch")
         print("2. Arbol")

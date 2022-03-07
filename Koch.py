@@ -4,15 +4,15 @@ Created on 9/5/2015
 @author: estuche77
 '''
 import turtle
+import Validator
 
 
 def principal():
-    prof = 0
-    try:
-        prof = int(input("Digite la profundidad: "))
-        if (prof <= 0):
-            raise ValueError
-    except ValueError:
+    string_input = input("Digite la profundidad: ")
+
+    success, prof = Validator.TryConvertPositiveInteger(string_input)
+    
+    if not success:
         print("Profundidad debe ser un entero positivo")
         return
 

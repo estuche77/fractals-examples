@@ -5,6 +5,7 @@ Created on May 24, 2015
 '''
 import math
 import turtle
+import Validator
 
 
 def principal():
@@ -12,7 +13,13 @@ def principal():
     x = 0 - tam / 2
     y = 0 - (math.sqrt(3) * tam / 2)
 
-    prof = int(input("Digite la profundidad: "))
+    string_input = input("Digite la profundidad: ")
+
+    success, prof = Validator.TryConvertPositiveInteger(string_input)
+    
+    if not success:
+        print("Profundidad debe ser un entero positivo")
+        return
 
     # So that we can spawn several windows from the menu
     turtle.TurtleScreen._RUNNING = True
